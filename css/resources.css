@@ -1,0 +1,22 @@
+#category h2{
+    background-color:  #211A1E;
+    color: #84B082;
+    padding: 1%;
+    text-align: center;
+    font-weight: 700;
+}
+.catBtn{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+    background-color: #84B082;
+    font-size: 20px;
+    font-weight: 600;
+    color: #211A1E;
+}
+h5{
+    color: #84B082;
+}
+img{
+
+}

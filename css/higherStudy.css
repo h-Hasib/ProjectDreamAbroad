@@ -1,0 +1,27 @@
+
+#uniFinder h2 {
+    padding: .5%;
+    background-color: #84B082;
+    color: #211A1E;
+    text-align: center;
+    font-weight: 700;
+}
+.finder{
+    padding: 3%;
+}
+.finder .btn{
+    width: 100%;
+    padding: 2%;
+    background-color: #84B082;;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+.modal-body .btn{
+    width: 100%;
+    padding: 2%;
+    background-color: #84B082;;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}

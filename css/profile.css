@@ -1,0 +1,41 @@
+#profile .container-fluid {
+    padding: 1% 3%;
+}
+
+.profileImage {
+    display: inline-flex;
+    width: 100%;
+
+}
+
+.topText {
+    padding-left: 4%;
+    width: 100%;
+    border-bottom: 3px solid #211A1E;
+}
+
+.profileImage img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profileImage h1 {
+    /*    font-size: 3em;*/
+    font-weight: 700;
+    padding-top: 2%
+
+}
+.notices{
+    height: 80%;
+    width: 100%;
+}
+.notices a{
+    background-color: #84B082;
+    padding: 7% 5%;
+    width: 100%;
+    font-size: 1.2em;
+    color: white;
+}

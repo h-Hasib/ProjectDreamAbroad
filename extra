@@ -1,0 +1,82 @@
+PROFILE->notification
+<div class="col-lg-4 d-sm-none d-lg-block">
+    <h2>Recent Notices</h2>
+    <div class="overflow-auto notices">
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+        <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
+    </div>
+</div>
+
+
+------------------------------------------------
+
+<h4><i><?php print_r($temp_address['street']);echo", "; print_r($temp_address['city']); echo","; ?></i></h4>
+<h4><i><?php print_r($temp_address['district']);echo", "; print_r($temp_address['state']);echo", "; print_r($temp_address['country']);echo","; ?></i></h4>
+<h4><i><?php echo "Zip Code: "; print_r($temp_address['zipCode']);?></i></h4>
+-------------------------------------------------
+
+
+
+
+
+
+
+echo "fname = $firststName<br>";
+echo "lname = $lastName<br>";
+echo "father name = $fathername<br>";
+echo "mother name = $mothername<br>";
+echo "rel = $religion<br>";
+echo "nationality = $nationality<br>";
+echo "dob = $dob<br>";
+echo "NID = $nid<br>";
+echo "phone num = $phone<br>";
+echo "oldPass= $oldpass<br>";
+echo "new pass = $newpass<br>";
+
+
+echo "street = $street<br>";
+echo "vity = $city<br>";
+echo "dist = $district<br>";
+echo "state = $state<br>";
+echo "zip = $zip<br>";
+echo "country = $country<br>";
+
+echo "exam1 = $examDegree1<br>";
+echo "grp1 = $group1<br>";
+echo "gp1 = $gpa1<br>";
+echo "year1 = $year1<br>";
+echo "inst1 = $institution1<br>";
+echo "brd1 = $board1<br>";
+
+echo "exam2 = $examDegree2<br>";
+echo "grp2 = $group2<br>";
+echo "gp2 = $gpa2<br>";
+echo "year2 = $year2<br>";
+echo "inst2 = $institution2<br>";
+echo "brd2 = $board2<br>";
+
+echo "exam 3 = $examDegree3<br>";
+echo "group3 = $group3<br>";
+echo "gp3 = $gpa3<br>";
+echo "yr3 = $year3<br>";
+echo "inst3 = $institution3<br>";
+
+echo "exam 4 = $examDegree4<br>";
+echo "group4 = $group4<br>";
+echo "gp4 = $gpa4<br>";
+echo "yr4 = $year4<br>";
+echo "inst4 = $institution4<br>";
+
+
+
+-----------------------------------------------------------------------------
+University add SQL = INSERT INTO `university` (`universityID`, `uniName`, `uniWebUrl`, `uniEmail`) VALUES (NULL, 'Massachusetts Institute of Technology', 'https://www.mit.edu/', 'admissions@mit.edu');
+Uni address add SQL= INSERT INTO `address` (`street`, `district`, `city`, `state`, `zipCode`, `country`, `userProfile_UserID`, `uni_UniverityID`, `addressID`) VALUES ('77 Massachusetts Avenue', 'Cambridge', 'Massachusetts', 'Cambridge', 'MA 02139', 'USA', NULL, '2', NULL);

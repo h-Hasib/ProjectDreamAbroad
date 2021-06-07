@@ -1,0 +1,137 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation {
+    padding: 0% 3%;
+/*    border-bottom: 3px solid #0096ff;*/
+    background-color: #211A1E;
+    font-weight: 700;
+
+}
+.navbar-nav{
+    float: left;
+}
+.navbar-nav a {
+    color: #84B082;
+    margin: 10px 20px;
+}
+
+.navbar-nav a:hover {
+    color: white;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #84B082;
+}
+
+.navbar-nav .btn {
+    border: 1px solid #44d7ca;
+    color: #44d7ca;
+}
+
+.logo{
+    height: 70px;
+}
+.profileIcon:hover{
+    padding-bottom: 8px !important;
+    border-bottom: none !important;
+}
+#hotline{
+    background-color: #84B082;
+    font-family: 'Raleway', sans-serif;
+    color: #211A1E;
+    margin-top: -8px;
+}
+.hotline{
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    padding: 1%;
+    padding-bottom: 0px;
+}
+#carousel{
+    background-image: url(../images/bg/4853433.jpg);
+    background-size: cover;
+}
+#carousel .container{
+    padding: 2% 0%;
+}
+#carousel h2{
+    background-color: #211A1E;
+    padding: 1%;
+    color: white;
+}
+.uni img{
+    height: 600px;
+    filter: brightness(45%)
+}
+.stu img{
+    height: 600px;
+}
+/*
+.gal img{
+    height: 400px;
+}
+*/
+
+.logInAlert{
+    background-color: #84B082;
+}
+.regForm{
+    padding: 40px 60px;
+    margin-top: 40px;
+}
+.regForm h3{
+    font-weight: 800;
+    color: #211A1E;
+    text-align: center;
+    
+}
+.regForm input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #211A1E;
+}
+.regForm lebel{
+    color: white;
+}
+.regForm .btn{
+    background-color: #211A1E;
+    color: white;
+}
+.logBtn{
+    justify-content: center;
+    padding-left: 40%;
+}
+#footer{
+    padding: 2% 0%; 
+    background-color: #211A1E;
+    color: #84B082;
+}
+.importantLinks a{
+    color: #84B082;
+    text-decoration: underline;
+}
+.social a{
+    font-size: 4em;
+    padding-right: 3%;
+}
+
+#faq h2{
+    font-weight: 700;
+    background-color:  #84B082;
+    color: #211A1E;
+    padding: 1%;
+    text-align: center;
+}
+#faq .container .btn{
+    width: 100%;
+    font-size: 30px;
+    background-color: #211A1E;
+    color: #84B082;
+}
+#faq .collapse .card{
+    font-size: 20px;
+}
+#editProfile h4{
+    color: #84B082;
+}
