@@ -53,7 +53,7 @@ if(
                 margin-left:auto;
                 margin-right:auto;
                 font-size: 0.9em;
-                min-width: 95%;
+                min-width: 90%;
                 table-layout: auto;
                 border-radius: 6px 6px 0 0;
                 overflow: hidden;
@@ -88,6 +88,15 @@ if(
               .content-table tbody tr.active-row {
                 font-weight: bold;
                 color: #009879;
+
+              }
+              .container-button {
+                background-color: MediumSeaGreen;
+                color:white;
+                border-radius:9px;
+                height: 80px;
+                position: relative;
+                left:45%;
               }
           </style>
 
@@ -144,7 +153,6 @@ if(
               </div>
           </section>
           <br>
-
           <!--Research Details Print through table -->
           <section id="uniFinder"><h2>Research Details</h2>
           <?php
@@ -162,11 +170,10 @@ if(
                   // Write the code of Table
                   ?>
                       <!-- Table to show just the COUNTRY and AREA OF EXPERTISE -->
-                  <br><br><table class="content-table">
+                  <br><table class="content-table">
                       <thead>
                         <tr>
-                          <th><h4>Country: <i><?php echo $country ?></i></h4></th>
-                          <th><h4>Research Area: <i><?php echo $area ?></i></h4></th>
+                          <th><h4>Research Name: <i><?php echo $row['projectName'] ?></i></h4></th>
                         </tr>
                       </thead>
                   </table><br>
@@ -174,59 +181,58 @@ if(
                   <table class="content-table">
                       <thead>
                         <br><tr>
-                          <th>Research ID</th>
-                          <th>Research Name</th>
-                          <th>University Name</th>
-                          <th>University URL</th>
-                          <th>University Email</th>
-                          <th>University Phone</th>
-                          <th>More</th>
+                          <th><h4>Research Name</h4></th>
+                          <th><h4>University Name</h4></th>
                         </tr>
                       </thead>
                       <tbody>
+                        <!-- code for printing the Research information -->
+                        <tr>
+                            <td><i><?php echo $row['projectName']?></i></td>
+                            <td><p><?php echo $row['Description']?></p></td>
+
+                        </tr>
+                      </tbody>
+                    </table><br><br>
+                    <table class="content-table">
+                        <thead>
+                            <th><h3>Field Of research</h3></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td><?php
+                                  $anothersql="SELECT exp.areaName
+                                                FROM researchproject AS res
+                                                      JOIN expertisearea_researchproject AS exp_res
+                                                      ON exp_res.research_ID = res.researchID
+                                                      JOIN expertisearea AS exp
+                                                      ON exp.expAreaID = exp_res.expArea_ID
+                                                WHERE res.researchID= $research_id";
+
+                                  $returnVal=$conn->query($anothersql);
+                                  $returnTableVal=$returnVal->fetchAll();
+                                  foreach ($returnTableVal as $tmprow) {
+                                    ?>
+                                    <tr>
+                                      <td><i><?php echo $tmprow['areaName']?></i></td>
+                                    </tr>
+                                    <?php
+                                  }
+                                  ?>
+                              </td>
+                            </tr>
+                        </tbody>
+                    </table><br>
+                    <input type="button" value="Supervisor Details" class="container-button" onclick="supervisorfn(<?php echo $research_id ?>);"><br><br>
+
+                    <br><br><br><br>
                       <?php
-                      if($returnTableObj->rowCount()==0){ //Database return nothing
-                      ?>
-                                <tr>
-                                  <td colspan="7"><p style="color: red "><b>Sorry! No Data Found In The Database That Match With Your Search Keys. Don't worry, We'll Update Soon.</b></p></td>
-                                </tr>
-                            </tbody>
-                          </table><br><br><br><br>
-                      <?php
-                      }
-                      else{
-                            //code for printing the professor list with information
-                            foreach ($returnTable as $row) {
-                              ?>
-                              <tr>
-                                  <td><?php echo $row['researchID']?></td>
-                                  <td><?php echo $row['projectName']?></td>
-                                  <td><?php echo $row['uniName']?></td>
-                                  <td><?php echo $row['uniWebUrl']?></td>
-                                  <td><?php echo $row['uniEmail']?></td>
-                                  <td><?php echo $row['uni_Phone_Number']?></td>
-                                  <td>
-                                      <br><input type="button" value="Research Details" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="detailsfn(<?php echo $row['researchID'] ?>)"><br><br>
-                                      <input type="button" value="Supervisor Details" style="background-color: MediumSeaGreen; color:white; border-radius:9px" onclick="supervisorfn(<?php echo $row['researchID'] ?>);"><br><br>
-                                  </td>
-                              </tr>
-                              <?php
-                            }
-                            ?>
-                            </tbody>
-                        </table><br><br><br><br>
-                      <?php
-                    }
               }
               catch(PDOException $e){
                     echo 'Connection failed: ' . $e->getMessage();
               }
               ?>
           </section>
-          <?php
-
-          ?>
-
           <!--footer section-->
           <section id="footer">
               <div class="container">

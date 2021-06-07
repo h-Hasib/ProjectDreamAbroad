@@ -317,7 +317,7 @@ if(
                                       <td><?php echo $row['uniEmail']?></td>
                                       <td><?php echo $row['uni_Phone_Number']?></td>
                                       <td>
-                                          <br><input type="button" value="Research Details" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="detailsfn(<?php echo $row['researchID'] ?>)"><br><br>
+                                          <br><input type="button" value="Research Details" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="detailsfn(<?php echo $row['researchID']?>)"><br><br>
                                           <input type="button" value="Supervisor Details" style="background-color: MediumSeaGreen; color:white; border-radius:9px" onclick="supervisorfn(<?php echo $row['researchID'] ?>);"><br><br>
                                       </td>
                                   </tr>
