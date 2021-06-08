@@ -91,7 +91,6 @@ if(
 
               }
               .container-button {
-                background-color: MediumSeaGreen;
                 color:white;
                 border-radius:9px;
                 height: 80px;
@@ -181,16 +180,15 @@ if(
                   <table class="content-table">
                       <thead>
                         <br><tr>
-                          <th><h4>Research Name</h4></th>
-                          <th><h4>University Name</h4></th>
+                          <th><h4>Research Description</h4></th>
+                          <th><h4>Start Date</h4></th>
                         </tr>
                       </thead>
                       <tbody>
                         <!-- code for printing the Research information -->
                         <tr>
-                            <td><i><?php echo $row['projectName']?></i></td>
                             <td><p><?php echo $row['Description']?></p></td>
-
+                            <td><i><?php echo $row['startDate']?></i></td>
                         </tr>
                       </tbody>
                     </table><br><br>
@@ -223,7 +221,7 @@ if(
                             </tr>
                         </tbody>
                     </table><br>
-                    <input type="button" value="Supervisor Details" class="container-button" onclick="supervisorfn(<?php echo $research_id ?>);"><br><br>
+                    <input type="button" value="Supervisor Details" style="background-color: MediumSeaGreen" class="container-button" onclick="supervisorfn(<?php echo $research_id ?>);"><br><br>
 
                     <br><br><br><br>
                       <?php
