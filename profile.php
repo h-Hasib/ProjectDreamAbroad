@@ -87,7 +87,7 @@ if(
                             <div class="dropdown dropstart" style="">
                                 <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="profile.php"><img src="images/students/sofi.jpg" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
+                                    <li><a class="dropdown-item" href="profile.php"><img src="<?php echo $temp_profile['profilePic']?>" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
                                     <li><a class="dropdown-item" href="editProfile.php">Edit Profile</a></li>
                                     <li><a class="dropdown-item" href="changePassword.php" style="color: skyblue">Change Password</a></li>
                                     <li><a class="dropdown-item" href="logOutProcess.php" style="color: red"><b>Log Out</b></a></li>

@@ -57,7 +57,6 @@ if(
                 table-layout: auto;
                 border-radius: 6px 6px 0 0;
                 overflow: hidden;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
               }
 
               .content-table thead tr {
@@ -222,7 +221,6 @@ if(
                         </tbody>
                     </table><br>
                     <input type="button" value="Supervisor Details" style="background-color: MediumSeaGreen" class="container-button" onclick="supervisorfn(<?php echo $research_id ?>);"><br><br>
-
                     <br><br><br><br>
                       <?php
               }

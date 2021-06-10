@@ -57,7 +57,7 @@ if(
                 table-layout: auto;
                 border-radius: 6px 6px 0 0;
                 overflow: hidden;
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+                
               }
 
               .content-table thead tr {
@@ -224,7 +224,7 @@ if(
                                       <td><?php echo $row['profEmail']?></td>
                                       <td><?php echo $row['country']?></td>
                                       <td><?php echo $row['uniName']?></td>
-                                      <td><?php echo $row['uniWebUrl']?></td> 
+                                      <td><a href="<?php echo $row['uniWebUrl']?>" target="_blank"><?php echo $row['uniWebUrl']?></a></td> 
                                   </tr>
                                   <?php
                                 }

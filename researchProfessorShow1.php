@@ -62,7 +62,7 @@ if(
                   table-layout: auto;
                   border-radius: 6px 6px 0 0;
                   overflow: hidden;
-                  box-shadow: 0 0 20px rgba(0, 0, 0, 0.50);
+        
                 }
 
                 .content-table thead tr {
@@ -228,7 +228,7 @@ if(
                                       <td><?php echo $row['profEmail']?></td>
                                       <td><?php echo $row['uniName']?></td>
                                       <td><?php echo $row['deptName']?></td>
-                                      <td><?php echo $row['uniWebUrl']?></td>
+                                      <td><a href="<?php echo $row['uniWebUrl']?>" target="_blank"><?php echo $row['uniWebUrl']?></a></td>
                                   </tr>
                                   <?php
                                 }
@@ -269,7 +269,6 @@ if(
 
                       $returnTableObj=$conn->query($mysqlquery);
                       $returnTable=$returnTableObj->fetchAll();
-
                       // Write the code of Table
                       ?>
                           <!-- Table to show just the COUNTRY and AREA OF EXPERTISE -->
@@ -313,12 +312,12 @@ if(
                                       <td><?php echo $row['researchID']?></td>
                                       <td><?php echo $row['projectName']?></td>
                                       <td><?php echo $row['uniName']?></td>
-                                      <td><?php echo $row['uniWebUrl']?></td>
+                                      <td><a href="<?php echo $row['uniWebUrl']?>" target="_blank"><?php echo $row['uniWebUrl']?></a></td>
                                       <td><?php echo $row['uniEmail']?></td>
                                       <td><?php echo $row['uni_Phone_Number']?></td>
                                       <td>
-                                          <br><input type="button" value="Research Details" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="detailsfn(<?php echo $row['researchID']?>)"><br><br>
-                                          <input type="button" value="Supervisor Details" style="background-color: MediumSeaGreen; color:white; border-radius:9px" onclick="supervisorfn(<?php echo $row['researchID'] ?>);"><br><br>
+                                          <br><input type="button" class="btn" value="Research Details" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="detailsfn(<?php echo $row['researchID']?>)"><br><br>
+                                          <input type="button" class="btn" value="Supervisor Details" style="background-color: MediumSeaGreen; color:white; border-radius:9px" onclick="supervisorfn(<?php echo $row['researchID'] ?>);"><br><br>
                                       </td>
                                   </tr>
                                   <?php
@@ -346,12 +345,11 @@ if(
                             <!--                  important links-->
                             <h2>Important Links</h2>
                             <a class="nav-item nav-link active" href="home.php">Home <span class="sr-only">(current)</span></a>
-
-                                <a class="nav-item nav-link active" href="higherStudies.php">Higher Studies<span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link active" href="scholarship.php">Scholarships</a>
-                                <a class="nav-item nav-link active" href="research.php">Research & Professor</a>
-                                <a class="nav-item nav-link active" href="resources.php">Preparation & Resources</a>
-                                <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
+                            <a class="nav-item nav-link active" href="higherStudies.php">Higher Studies<span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link active" href="scholarship.php">Scholarships</a>
+                            <a class="nav-item nav-link active" href="research.php">Research & Professor</a>
+                            <a class="nav-item nav-link active" href="resources.php">Preparation & Resources</a>
+                            <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
                         </div>
                         <div class="col-lg-4 contact">
                             <!--                   contact-->
@@ -377,7 +375,7 @@ if(
                 <div class="container-fluid">
                     <div class="text-center p-3">
                         © 2021 Copyright:
-                        <a class="text-white" href="https://dreamsabroad.com/">DREAMS ABROAD</a>
+                        <a class="text-white" href="https://dreamsabroad.com/" >DREAMS ABROAD</a>
                     </div>
                 </div>
             </section>
