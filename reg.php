@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
@@ -72,7 +71,7 @@
                     </div>
                     <div class="col form-group form-floating">
                         <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" id="lastName" name="lastName" required>
-                        <label for="lastName"  >Last Name</label>
+                        <label for="lastName">Last Name</label>
                     </div>
                 </div><br>
                 <!-- for gender -->
@@ -128,16 +127,15 @@
     <section id="footer">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-6 contact">
-                    <!--                   contact-->
+                    <!--          contact       -->
                     <h2>Contact Us</h2>
                     <p> <i class="fas fa-phone-alt"></i> Hotline: +880 1111 111 111</p>
                     <p> <i class="fas fa-envelope"></i> Email: contact@dreamabroad.com</p>
                     <p> <i class="fas fa-map-marker-alt"></i> Address: Vatara, Dhaka 1212, Bangladesh</p>
                 </div>
                 <div class="col-lg-6 social">
-                    <!--                   social media icons-->
+                    <!--    social media icons  -->
                     <h2>Social Media</h2>
                     <a href="www.facebook.com" style="color: royalblue"><i class="fab fa-facebook-square"></i></a>
                     <a href="www.twitter.com" style="color: skyblue"><i class="fab fa-twitter-square"></i></a>

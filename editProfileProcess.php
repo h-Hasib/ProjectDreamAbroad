@@ -130,10 +130,11 @@ if(
                 ){
                       //if the image value setted from html FORM
                       $newimg=$_FILES['changeImg'];
-                      $image_name=$newimg['name'];
+                      $image_name=$newimg['name'];      // New image name
                       $image_tmp_path=$newimg['tmp_name'];
-                      $to="images/profile_picture/$image_name";
-                      if($to == "images/profile_picture/"){
+                      $to="images/profile_picture/$image_name"; ///new Image path
+                      
+                      if($to == "images/profile_picture/"){  
                             //if no image selected
                            ?> <script>location.assign("home.php");</script> <?php
                       }
@@ -143,11 +144,11 @@ if(
                           $sqlQuery = $conn->query("SELECT profilePic FROM userprofile WHERE userID=$id");
                           $temp = $sqlQuery->fetch();
                           $path = $temp['profilePic'];  //delete an image from localserver when it deleted from the website
-
-                          $conn->exec("UPDATE userprofile SET profilepic='$to' WHERE userID=$id");
-                          move_uploaded_file($image_tmp_path, $to);
-                          unlink($path); //delete the previous uploaded imagefile from the server
-
+                          if($to != $path){     //if new image and previously uploaded image doesn't match
+                                $conn->exec("UPDATE userprofile SET profilepic='$to' WHERE userID=$id");
+                                move_uploaded_file($image_tmp_path, $to);
+                                unlink($path); //delete the previous uploaded imagefile from the server
+                            }    
                           ?>
                             <script>location.assign("home.php");</script>
                           <?php

@@ -1,4 +1,4 @@
-PROFILE->notification
+<--PROFILE->notification-->
 <div class="col-lg-4 d-sm-none d-lg-block">
     <h2>Recent Notices</h2>
     <div class="overflow-auto notices">
@@ -14,15 +14,50 @@ PROFILE->notification
         <a href="#" style="margin-top: 10px;" class="btn"> THIS IS A NOTIFICATION TITLE SECTION</a>
     </div>
 </div>
-
-
 ------------------------------------------------
-
-<h4><i><?php print_r($temp_address['street']);echo", "; print_r($temp_address['city']); echo","; ?></i></h4>
-<h4><i><?php print_r($temp_address['district']);echo", "; print_r($temp_address['state']);echo", "; print_r($temp_address['country']);echo","; ?></i></h4>
-<h4><i><?php echo "Zip Code: "; print_r($temp_address['zipCode']);?></i></h4>
+<!--Code for Service  Track-->
+<h2>Service Track:</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Service</th>
+            <th scope="col">Region</th>
+            <th scope="col">University</th>
+            <th scope="col">Professor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Scholarship</th>
+            <td>Canada</td>
+            <td>University Of Toronto</td>
+            <td>N\A</td>
+        </tr>
+        <tr>
+            <th scope="row">Higher Study</th>
+            <td>Canada</td>
+            <td>Universtiy Of Toronto</td>
+            <td>********</td>
+        </tr>
+    </tbody>
+</table><br>
 -------------------------------------------------
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+    (function() {
+        var s1 = document.createElement("script"),
+            s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5ddc3604d96992700fc93042/1f4tqa0am';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+-------------------------------------------------
 
 
 

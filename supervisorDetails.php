@@ -57,7 +57,7 @@ if(
                 table-layout: auto;
                 border-radius: 6px 6px 0 0;
                 overflow: hidden;
-                
+
               }
 
               .content-table thead tr {
@@ -91,7 +91,7 @@ if(
 
               }
               .container-button {
-                
+
                 color:white;
                 border-radius:9px;
                 height: 80px;
@@ -99,7 +99,6 @@ if(
                 left:45%;
               }
           </style>
-
           <title>Supervisor Details</title>
       </head>
 
@@ -122,13 +121,12 @@ if(
                               <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
                           </div>
                       </div>
-
                           <!--  Profile button-->
                       <div class="navbar-nav  ml-auto ">
                           <div class="dropdown dropstart" style="">
                               <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
                               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="dropdown-item" href="profile.php"><img src="images/students/sofi.jpg" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
+                                  <li><a class="dropdown-item" href="profile.php"><img src="<?php echo $temp_profile['profilePic'] ?>" alt="" style="height: 40px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
                                   <li><a class="dropdown-item" href="editProfile.php">Edit Profile</a></li>
                                   <li><a class="dropdown-item" href="changePassword.php" style="color: skyblue">Change Password</a></li>
                                   <li><a class="dropdown-item" href="logOutProcess.php" style="color: red"><b>Log Out</b></a></li>
@@ -137,6 +135,7 @@ if(
                       </div>
                       <!--    profile button end-->
                     </div>
+                  </div>
               </nav>
           </section>
           <!--hotline contactact section-->
@@ -164,13 +163,13 @@ if(
                                 FROM researchproject AS res
                                     JOIN professor_researchproject AS prof_res
                                     ON res.researchID = prof_res.researchProject_researchID
-                                    
+
                                     JOIN professor AS prof
                                     ON prof.professor_ID=prof_res.prof_res_professorID
-                                    
+
                                     JOIN university AS uni
                                     ON uni.universityID = res.university_universityID
-                                    
+
                                 WHERE res.researchID = '$research_id'";
 
                   $returnTableObj=$conn->query($mysqlquery);
@@ -224,12 +223,12 @@ if(
                                       <td><?php echo $row['profEmail']?></td>
                                       <td><?php echo $row['country']?></td>
                                       <td><?php echo $row['uniName']?></td>
-                                      <td><a href="<?php echo $row['uniWebUrl']?>" target="_blank"><?php echo $row['uniWebUrl']?></a></td> 
+                                      <td><a href="<?php echo $row['uniWebUrl']?>" target="_blank"><?php echo $row['uniWebUrl']?></a></td>
                                   </tr>
                                   <?php
                                 }
-                           }     
-                         ?>  
+                           }
+                         ?>
                       </tbody>
                   </table><br><br>
                   <input type="button" value="Research Details" style="background-color: DodgerBlue" class="container-button" onclick="detailsfn(<?php echo $research_id ?>);"><br><br>

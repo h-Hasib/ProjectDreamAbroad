@@ -67,7 +67,7 @@ if(
             <section id="#navbar">
                 <nav class="navbar navbar-expand-lg" data-aos="fade-right;" data-aos-delay="1500">
                     <div class="container-fluid navigation">
-                        <a class="navbar-brand" href="#"><img class="logo" src="images/munna_logo_white_2.png" alt="">Dream Abroad</a>
+                        <a class="navbar-brand" href="home.php"><img class="logo" src="images/munna_logo_white_2.png" alt="">Dream Abroad</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span style="color: white; border: none !important;"><i class="fas fa-bars"></i></span>
                         </button>
@@ -81,13 +81,12 @@ if(
                                 <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
                             </div>
                         </div>
-
                             <!--  Profile button-->
                         <div class="navbar-nav  ml-auto ">
                             <div class="dropdown dropstart" style="">
                                 <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
                                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="dropdown-item" href="profile.php"><img src="<?php echo $temp_profile['profilePic']?>" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
+                                    <li><a class="dropdown-item" href="profile.php"><img src="<?php echo $temp_profile['profilePic'] ?>" alt="" style="height: 40px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
                                     <li><a class="dropdown-item" href="editProfile.php">Edit Profile</a></li>
                                     <li><a class="dropdown-item" href="changePassword.php" style="color: skyblue">Change Password</a></li>
                                     <li><a class="dropdown-item" href="logOutProcess.php" style="color: red"><b>Log Out</b></a></li>
@@ -170,31 +169,10 @@ if(
                                 </tbody>
                             </table>
                             <br><br>
-                            <h2>Service Track:</h2>
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Service</th>
-                                        <th scope="col">Region</th>
-                                        <th scope="col">University</th>
-                                        <th scope="col">Professor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Scholarship</th>
-                                        <td>Canada</td>
-                                        <td>University Of Toronto</td>
-                                        <td>N\A</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Higher Study</th>
-                                        <td>Canada</td>
-                                        <td>Universtiy Of Toronto</td>
-                                        <td>********</td>
-                                    </tr>
-                                </tbody>
-                            </table><br>
+
+                            <!-- Write Code for Service  Track-->
+                            <!-- Code written in 'extra' -->
+
                             <div class="profileContact">
                                 <h2>Contact Information</h2>
                                 <p><i class="fas fa-phone-alt"></i> Phone :  <?php print_r($temp_profile['phoneNumber']);?></p>
@@ -208,6 +186,7 @@ if(
                             </div><br>
                         </div><br>
                         <!-- will be added the notification/work progress here -->
+                        <!-- Code written in 'extra' -->
                     </div>
                 </div><br><br>
                 <div class="d-grid gap-2" style="margin-top: -6%;">
@@ -261,20 +240,9 @@ if(
 
 
             <!--Start of Tawk.to Script-->
-            <script type="text/javascript">
-                var Tawk_API = Tawk_API || {},
-                    Tawk_LoadStart = new Date();
-                (function() {
-                    var s1 = document.createElement("script"),
-                        s0 = document.getElementsByTagName("script")[0];
-                    s1.async = true;
-                    s1.src = 'https://embed.tawk.to/5ddc3604d96992700fc93042/1f4tqa0am';
-                    s1.charset = 'UTF-8';
-                    s1.setAttribute('crossorigin', '*');
-                    s0.parentNode.insertBefore(s1, s0);
-                })();
-            </script>
+                <!-- Code Written in 'extra' -->
             <!--End of Tawk.to Script-->
+
             <!-- Option 1: Bootstrap Bundle with Popper -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
             <!-- MDB -->

@@ -74,7 +74,7 @@ if(
                           <div class="dropdown dropstart" style="">
                               <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
                               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="adminProfile.php"><img src="images/admin/admin1.jpg" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['admin_name'] ?></i></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="images/admin/admin1.jpg" alt="" style="height: 40px; border-radius: 60%;"> <i><?php echo $temp_profile['admin_name'] ?></i></a></li>
                                 <li><a class="dropdown-item" href="adminChangePassword.php" style="color: skyblue">Change Password</a></li>
                                 <li><a class="dropdown-item" href="adminLogOutProcess.php" style="color: red"><b>Log Out</b></a></li>
                               </ul>

@@ -196,10 +196,10 @@ if(
                                         <td><a href="<?php echo $row['introVedioLink']?>" target="_blank"><?php echo $row['introVedioLink']?></a></td>
                                         <td><?php echo $row['about']?></td> 
                                         <td><?php echo $row['nextExamDate']?></td>
-                                        <td><?php echo $row['image']?></td>
+                                        <td><?php echo $row['imagePath']?></td>
                                         <td><a href="<?php echo $row['officialLink']?>" target="_blank"><?php echo $row['officialLink']?></a></td>
                                         <td><a href="<?php echo $row['gDriveLink']?>" target="_blank"><?php echo $row['gDriveLink']?></a></td>
-                                        <td><?php echo $row['pdfLink']?></a></td>
+                                        <td><?php echo $row['pdfPath']?></a></td>
                                         <td><a href="<?php echo $row['moreLink']?>" target="_blank"><?php echo $row['moreLink']?></a></td>
                                         <td>
                                             <br><input type="button" class="btn" value="Update" style="background-color: DodgerBlue; color: white; border-radius:9px" onclick="updatefn(<?php echo $row['resource_ID']?>)"> <br><br>

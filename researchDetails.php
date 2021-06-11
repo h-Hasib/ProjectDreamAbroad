@@ -106,35 +106,35 @@ if(
           <section id="#navbar">
               <nav class="navbar navbar-expand-lg" data-aos="fade-right;" data-aos-delay="1500">
                   <div class="container-fluid navigation">
-                      <a class="navbar-brand" href="#"><img class="logo" src="images/munna_logo_white_2.png" alt="">Dream Abroad</a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span style="color: white; border: none !important;"><i class="fas fa-bars"></i></span>
-                      </button>
-                      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                          <div class="navbar-nav  ml-auto ">
-                              <a class="nav-item nav-link active" href="home.php">Home <span class="sr-only">(current)</span></a>
-                              <a class="nav-item nav-link active" href="higherStudies.php">Higher Studies<span class="sr-only">(current)</span></a>
-                              <a class="nav-item nav-link active" href="scholarship.php">Scholarships</a>
-                              <a class="nav-item nav-link active" href="research.php">Research & Professor</a>
-                              <a class="nav-item nav-link active" href="resources.php">Preparation & Resources</a>
-                              <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
-                          </div>
-                      </div>
-
-                          <!--  Profile button-->
-                      <div class="navbar-nav  ml-auto ">
-                          <div class="dropdown dropstart" style="">
-                              <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
-                              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
-                                  <li><a class="dropdown-item" href="profile.php"><img src="images/students/sofi.jpg" alt="" style="height: 20px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
-                                  <li><a class="dropdown-item" href="editProfile.php">Edit Profile</a></li>
-                                  <li><a class="dropdown-item" href="changePassword.php" style="color: skyblue">Change Password</a></li>
-                                  <li><a class="dropdown-item" href="logOutProcess.php" style="color: red"><b>Log Out</b></a></li>
-                              </ul>
-                          </div>
-                      </div>
+                        <a class="navbar-brand" href="home.php"><img class="logo" src="images/munna_logo_white_2.png" alt="">Dream Abroad</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span style="color: white; border: none !important;"><i class="fas fa-bars"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <div class="navbar-nav  ml-auto ">
+                                <a class="nav-item nav-link active" href="home.php">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link active" href="higherStudies.php">Higher Studies<span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link active" href="scholarship.php">Scholarships</a>
+                                <a class="nav-item nav-link active" href="research.php">Research & Professor</a>
+                                <a class="nav-item nav-link active" href="resources.php">Preparation & Resources</a>
+                                <a class="nav-item nav-link active" href="soplor.php">SOP/LOR</a>
+                            </div>
+                        </div>
+                            <!--  Profile button-->
+                        <div class="navbar-nav  ml-auto ">
+                            <div class="dropdown dropstart" style="">
+                                <a class="btn btn-secondary dropdown-toggle nav-item nav-link active profileIcon" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.2em;background-color: transparent; border: rectangular;color: #84B082; "><i class="far fa-user-circle">Profile</i></a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="profile.php"><img src="<?php echo $temp_profile['profilePic'] ?>" alt="" style="height: 40px; border-radius: 50%;"> <i><?php echo $temp_profile['firstName'] ?></i></a></li>
+                                    <li><a class="dropdown-item" href="editProfile.php">Edit Profile</a></li>
+                                    <li><a class="dropdown-item" href="changePassword.php" style="color: skyblue">Change Password</a></li>
+                                    <li><a class="dropdown-item" href="logOutProcess.php" style="color: red"><b>Log Out</b></a></li>
+                                </ul>
+                            </div>
+                        </div>
                       <!--    profile button end-->
                     </div>
+                  </div>
               </nav>
           </section>
           <!--hotline contactact section-->
@@ -209,11 +209,11 @@ if(
                                   $returnVal=$conn->query($anothersql);
                                   $returnTableVal=$returnVal->fetchAll();
                                   foreach ($returnTableVal as $tmprow) {
-                                    ?>
-                                    <tr>
-                                      <td><i><?php echo $tmprow['areaName']?></i></td>
-                                    </tr>
-                                    <?php
+                                      ?>
+                                      <tr>
+                                        <td><i><?php echo $tmprow['areaName']?></i></td>
+                                      </tr>
+                                      <?php
                                   }
                                   ?>
                               </td>
@@ -237,7 +237,6 @@ if(
                           <!--                  important links-->
                           <h2>Important Links</h2>
                           <a class="nav-item nav-link active" href="home.php">Home <span class="sr-only">(current)</span></a>
-
                               <a class="nav-item nav-link active" href="higherStudies.php">Higher Studies<span class="sr-only">(current)</span></a>
                               <a class="nav-item nav-link active" href="scholarship.php">Scholarships</a>
                               <a class="nav-item nav-link active" href="research.php">Research & Professor</a>
