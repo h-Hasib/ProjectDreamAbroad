@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 17, 2021 at 08:17 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.8
+-- Generation Time: Jun 18, 2021 at 02:33 AM
+-- Server version: 10.4.19-MariaDB
+-- PHP Version: 8.0.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -58,7 +58,9 @@ INSERT INTO `address` (`street`, `district`, `city`, `state`, `zipCode`, `countr
 (NULL, NULL, NULL, NULL, NULL, NULL, 22, 13, NULL),
 ('Comilla Para', 'Dhaka', 'Badda', 'N/A', '1212', 'Bangladesh', 23, 14, NULL),
 ('7, Chandipur', 'Bogra', 'Sherpur', 'North-Bengal', '5840', 'Bangladesh', 24, 15, NULL),
-('64B Panir Lane', 'Sirajgonj', 'ullapara', 'N/A', '6760', 'Bangladesh', 25, 16, NULL);
+('64B Panir Lane', 'Sirajgonj', 'ullapara', 'N/A', '6760', 'Bangladesh', 25, 16, NULL),
+('54, Nouka Hat', 'Manikganj', 'Manikganj', 'N/A', '3456', 'Bangladesh', 26, 17, NULL),
+('31, C, Panir Tank Road', 'Dhaka', 'Vatara', 'N/A', '1212', 'Bangladesh', 27, 18, NULL);
 
 -- --------------------------------------------------------
 
@@ -238,7 +240,9 @@ INSERT INTO `education` (`educationID`, `exam_ssc`, `group_ssc`, `gpa_ssc`, `yea
 (8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 22),
 (9, 'ssc', 'science', '5.00', 2014, 'GCBHS', 'DHAKA', 'hsc', 'science', '5.00', 2016, 'GCPSC', 'DHAKA', 'BSC', 'CSE', '3.99', 2022, 'United International University', '', '', '', 0, '', 23),
 (10, 'ssc', 'science', '5.00', 2014, 'Bogra Cantonment Public School & College', 'Rajshahi', 'hsc', 'science', '5.00', 2016, 'Bogra Cantonment Public School & College', 'Rajshahi', 'BSc', 'CSE', '3.98', 2022, 'United International University', 'MSc', 'CSE', '3.98', 2024, 'United International University', 24),
-(11, 'ssc', 'science', '5.00', 2015, 'MABS', 'RAJ', '', '', '', 0, '', '', '', '', '', 0, '', '', '', '', 0, '', 25);
+(11, 'ssc', 'science', '5.00', 2015, 'MABS', 'RAJ', '', '', '', 0, '', '', '', '', '', 0, '', '', '', '', 0, '', 25),
+(12, 'ssc', 'science', '5.00', 2019, 'Ghior School', 'Dhaka', 'hsc', 'science', '5.00', 2021, 'Ghior College', 'Dhaka', '', '', '', 0, '', '', '', '', 0, '', 26),
+(13, 'ssc', 'science', '5.00', 2014, 'Bogra Cantonment Public School & College', 'Rajshahi', 'hsc', 'science', '5.00', 2016, 'Bogra Cantonment public School & College', 'Rajshahi', '', '', '', 0, '', '', '', '', 0, '', 27);
 
 -- --------------------------------------------------------
 
@@ -521,8 +525,10 @@ CREATE TABLE `resources` (
 --
 
 INSERT INTO `resources` (`resource_ID`, `resourceCategory`, `about`, `uploadDate`, `nextExamDate`, `introVedioLink`, `officialLink`, `gDriveLink`, `pdfPath`, `moreLink`, `imagePath`) VALUES
-(6, 'SAT', ' SAT(Scholastic Assessment Test) is a standardized test administered by the College Board and is required to be taken by students seeking admission to undergraduate schools.\r\nSAT exam has been developed to evaluate the written, verbal and mathematical skills of the candidates. Applicants aspire to pursue undergraduate courses.', '2021-06-11 17:23:16', '2024-10-25', 'https://www.youtube.com/embed/DNr2Lc3OZzw', 'http://sat.collegeboard.org/', 'https://drive.google.com/drive/folders/1m6jIaqaKd19rXeNuoeo-kVXTobJi7P2b?usp=sharing', 'resourceFiles/SAT_Guidelines.pdf', 'https://blog.prepscholar.com/how-to-prepare-for-the-sat', 'resourceFiles/SAT_exam_Pattern_info_graph.jpg'),
-(11, 'GRE', 'The Graduate Record Examinations(GRE) is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada and few in other countries. The GRE is owned and administered by Educational Testing Service.', '2021-06-11 18:39:19', '2021-07-22', 'https://www.youtube.com/embed/AhZgalyrzCg?start=24', 'https://www.ets.org/gre', 'https://drive.google.com/drive/folders/1olZ7z-VbUbs21lHzLOe8jzSCcme71YLQ?usp=sharing', 'resourceFiles/practice_book_GRE_general_test.pdf', 'https://hsa.grecbd.com/requiredbooksforgre/?fbclid=IwAR2vhIwD90V4BE31pNWzj08V59zZZPLhPZe7iF_ml8uStWZdyDpSBOuGv_I', 'resourceFiles/GRE_mark_distribution.png');
+(6, 'SAT', ' SAT(Scholastic Assessment Test) is a standardized test administered by the College Board and is required to be taken by students seeking admission to undergraduate schools.\r\nSAT exam has been developed to evaluate the written, verbal and mathematical skills of the candidates. Applicants aspire to pursue undergraduate courses..', '2021-06-17 19:29:45', '2024-10-25', 'https://www.youtube.com/embed/DNr2Lc3OZzw', 'http://sat.collegeboard.org/', 'https://drive.google.com/drive/folders/1m6jIaqaKd19rXeNuoeo-kVXTobJi7P2b?usp=sharing', 'resourceFiles/SAT_Guidelines.pdf', 'https://blog.prepscholar.com/how-to-prepare-for-the-sat', 'resourceFiles/SAT_exam_Pattern_info_graph.jpg'),
+(11, 'GRE', 'The Graduate Record Examinations(GRE) is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada and few in other countries. The GRE is owned and administered by Educational Testing Service.', '2021-06-11 18:39:19', '2021-07-22', 'https://www.youtube.com/embed/AhZgalyrzCg?start=24', 'https://www.ets.org/gre', 'https://drive.google.com/drive/folders/1olZ7z-VbUbs21lHzLOe8jzSCcme71YLQ?usp=sharing', 'resourceFiles/practice_book_GRE_general_test.pdf', 'https://hsa.grecbd.com/requiredbooksforgre/?fbclid=IwAR2vhIwD90V4BE31pNWzj08V59zZZPLhPZe7iF_ml8uStWZdyDpSBOuGv_I', 'resourceFiles/GRE_mark_distribution.png'),
+(16, 'German Language Test', '', '2021-06-18 02:41:25', '2026-06-17', 'https://www.youtube.com/embed/DgbvyEZtHAU', 'https://www.goethe.de/ins/bd/en/spr/prf.html', '', 'resourceFiles/', '', 'resourceFiles/'),
+(17, 'TOEFL', 'Test of English as a Foreign Language is a standardized test to measure the English language ability of non-native speakers wishing to enroll in English-speaking universities. The test is accepted by more than 11,000 universities and other institutions in over 150 countries.', '2021-06-18 02:38:53', '2021-06-30', 'https://www.youtube.com/embed/26OlvwuA81I', 'https://www.ets.org/toefl', '', 'resourceFiles/TOEFL preparation guide.pdf', '', 'resourceFiles/toefl-score-levels.jpg');
 
 -- --------------------------------------------------------
 
@@ -662,7 +668,9 @@ INSERT INTO `userprofile` (`userID`, `firstName`, `lastName`, `email`, `password
 (22, 'MD Hasibul', 'Hasan', 'h@yahoo.com', '81dc9bdb52d04dc20036dbd8313ed055', 'male', '012234567', 'images/profile_picture/download (4).jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (23, 'Mehedi', 'Saleh', 'admin@hellomunna.com', '81dc9bdb52d04dc20036dbd8313ed055', 'male', '01798675645', 'images/profile_picture/munna.jpg', 'Bangladeshi', 'Islam', 'Md. Mizanur Rahman', 'Mukuli Rahman', '1998-12-05', '123412341234', 'Developer', 'United International University'),
 (24, 'Hasibul', 'Hasan', 'hasib@gmail.com', 'ae167392ccc259673d9b15b4d78450bd', 'male', '01795645117', 'images/profile_picture/hasibul.jpg', 'Bangladeshi', 'Islam', 'MD. Solaiman Ali', 'Rehana Parvin', '1995-11-25', '10150239867', 'Student', 'UIU'),
-(25, 'Shahriyar', 'Hasan', 'sh@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'male', '01733454534', 'images/profile_picture/shahriyar.jpg', 'Bangaldeshi', 'Islam', 'Md. Abdul Matin', 'Shahinur Begum', '1999-08-17', '1234123412344', 'Teaching Assistant', 'UIU');
+(25, 'Shahriyar', 'Hasan', 'sh@gmail.com', '81dc9bdb52d04dc20036dbd8313ed055', 'male', '01733454534', 'images/profile_picture/shahriyar.jpg', 'Bangaldeshi', 'Islam', 'Md. Abdul Matin', 'Shahinur Begum', '1999-08-17', '1234123412344', 'Teaching Assistant', 'UIU'),
+(26, 'Afrat', 'Shishir', 'shishir@yahoo.com', '81dc9bdb52d04dc20036dbd8313ed055', 'male', '01723456789', 'images/profile_picture/shishir.jpg', 'Bangladeshi', 'Islam', 'Md. abc', 'Mr. assdf', '1999-06-22', '123456789900', 'Student', 'Ghior College'),
+(27, 'Hasibul', 'Hasan', 'hasib.cse@gmail.com', 'aea12cb30953bbf5e6bde83197f9145e', 'male', '01319506457', 'images/profile_picture/hasibul_hasan.jpg', 'Bangladeshi', 'Islam', 'Md. abc', 'RRR PPP', '1995-11-25', '123456789900', 'Student', 'United International University');
 
 --
 -- Indexes for dumped tables
@@ -820,7 +828,7 @@ ALTER TABLE `userprofile`
 -- AUTO_INCREMENT for table `address`
 --
 ALTER TABLE `address`
-  MODIFY `addressID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `addressID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `adminprofile`
@@ -850,7 +858,7 @@ ALTER TABLE `department`
 -- AUTO_INCREMENT for table `education`
 --
 ALTER TABLE `education`
-  MODIFY `educationID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `educationID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `expertisearea`
@@ -904,7 +912,7 @@ ALTER TABLE `researchproject`
 -- AUTO_INCREMENT for table `resources`
 --
 ALTER TABLE `resources`
-  MODIFY `resource_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `resource_ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `uniprogram`
@@ -928,7 +936,7 @@ ALTER TABLE `university`
 -- AUTO_INCREMENT for table `userprofile`
 --
 ALTER TABLE `userprofile`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Constraints for dumped tables

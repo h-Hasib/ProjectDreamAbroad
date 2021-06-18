@@ -1,0 +1,18 @@
+.modal-header{
+    text-align: center;
+}
+.resHeader h1{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 4px solid #84B082;
+}
+.resBody h2{
+    font-size: 3rem;
+    font-weight: 700;
+    border-bottom: 4px solid #211A1E;
+    padding-bottom: 1%;
+}
+.resBody p{
+    font-size: 2rem;
+}

@@ -190,7 +190,7 @@ if(
                     </div>
                 </div><br><br>
                 <div class="d-grid gap-2" style="margin-top: -6%;">
-                    <a class="btn " href="editProfile.php" role="button" style="background-color: dodgerblue; color: white; font-size: 1.2em;">Edit Your Profile</a>
+                    <br><br><a class="btn " href="editProfile.php" role="button" style="background-color: dodgerblue; color: white; font-size: 1.2em;">Edit Your Profile</a>
                 </div>
             </section><br><br>
 
